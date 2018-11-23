@@ -1,7 +1,9 @@
 set term cairolatex pdf standalone size 100cm, 100cm dl 0.5 \
-  header '\usepackage[scaled=1]{helvet}\
-          \usepackage{sfmath,xcolor}\
+  header '\usepackage{sfmath,xcolor}\
+          \usepackage[scaled=1]{helvet}\
           \renewcommand{\familydefault}{\sfdefault}'
+# or replace the last 2 lines by the following one to use computer modern fonts
+# \usepackage{cmbright}'
 
 texfile = system(sprintf("echo %s | sed 's/\\.gp/\\.tex/'", ARG0))
 pdffile = system(sprintf("echo %s | sed 's/\\.gp/\\.pdf/'", ARG0))
