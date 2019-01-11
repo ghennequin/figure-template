@@ -11,19 +11,22 @@ If you want to rename, you should rename both the `.gp` and `.tex` files so they
 
 Usage `mkfig`:
 
-```mkfig [figname]
+```sh
+mkfig [figname]
 ```
 
 to create `[figname].gp` and `[figname].tex` files in the working directory.  
 
 Install `mkfig`:
 
-```make install
+```sh
+make install
 ``` 
 
 
 Uninstall `mkfig`:
 
-```make uninstall
+```sh
+make uninstall
 ``` 
  
