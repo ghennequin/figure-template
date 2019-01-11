@@ -1,0 +1,12 @@
+#!/bin/sh
+if (( $# != 1 ))
+then
+  echo "Please supply figure name as first argument."
+  exit 1
+fi
+figname=$1
+template_dir="$(dirname "$(readlink `command -v mkfig`)")"
+cp "$template_dir/template.tex" "./$figname.tex"
+echo "created $figname.tex"
+cp "$template_dir/template.gp" "./$figname.gp"
+echo "created $figname.gp"
