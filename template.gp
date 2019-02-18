@@ -1,4 +1,5 @@
 set term cairolatex pdf standalone size 100cm, 100cm dl 0.5 \
+  font '\sfdefault,10' \
   header '\usepackage{sfmath,xcolor}\
           \usepackage[scaled=1]{helvet}\
           \renewcommand{\familydefault}{\sfdefault}'
