@@ -1,0 +1,50 @@
+%<<<1 Header
+\documentclass[xcolor=x11names,10pt]{beamer}
+
+\input{header}
+\usepackage{comment,bm}
+
+% you might want to define colours here
+%\definecolor{exc}{HTML}{E51E10}
+%\definecolor{inh}{HTML}{56B4E9}
+
+\begin{document}
+
+
+%<<<1 Title
+\section{Title}
+\begin{frame}
+\mypic{}{   
+
+\node (title) at (50,92) [below,scale=2,font=\bfseries,align=center,
+  inner sep=1em] {
+  Talk title};
+
+\node (author) at (50,60) [font=\bfseries] {My name};
+
+\coordinate (logos) at (50,2);
+\node at (5,2) [above right]
+  {\includegraphics[width=12em]{figs/cambridge.pdf}};
+\node at (95,0) [above left,rectangle,fill=black,inner sep=0em,draw=white,thick] 
+  {\includegraphics[width=7em]{figs/wellcome.pdf}};
+ 
+\node (email) [below=0em of author.south] {\texttt{my.email@eng.cam.ac.uk}};
+\node (context) [below=0em of email.south] {Place, Month 2019};
+
+}
+\end{frame}
+
+%<<<1 Empty new slide with grid
+\section{Foo}
+\begin{frame}
+\mypic{}{   
+\node at (50,92) [anchor=base,title] {Slide title};
+
+\input{grid}
+
+}
+\end{frame}
+
+%<<<1 End
+\end{document}
+
