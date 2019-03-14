@@ -5,4 +5,9 @@ then echo "Please supply talk name as first argument."
   exit 1
 fi
 talkname=$1 
-cp -rf "$template_dir/talk" "./$talkname"
+mkdir $talkname
+cp -f $template_dir/talk/grid.tex $talkname
+cp -f $template_dir/talk/header.tex $talkname
+cp -f $template_dir/talk/slides.tex $talkname
+cp -rf $template_dir/talk/figs $talkname
+
