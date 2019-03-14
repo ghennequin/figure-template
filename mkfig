@@ -5,7 +5,7 @@ then echo "Please supply figure name as first argument."
 fi
 figname=$1
 template_dir="$(dirname -- "$(readlink -f -- `which mkfig`)")"
-cp "$template_dir/template.tex" "./$figname.tex"
+cp "$template_dir/figure/template.tex" "./$figname.tex"
 echo "created $figname.tex"
-cp "$template_dir/template.gp" "./$figname.gp"
+cp "$template_dir/figure/template.gp" "./$figname.gp"
 echo "created $figname.gp"
