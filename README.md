@@ -1,4 +1,6 @@
-# Figure template (combination of gnuplot and tikz)
+# Lab Templates
+
+## Figure template (combination of gnuplot and tikz)
 
 Compilation:
 
@@ -25,6 +27,36 @@ make install
 
 
 Uninstall `mkfig`:
+
+```sh
+make uninstall
+``` 
+# Talk template 
+
+Compilation:
+
+```sh
+pdflatex slides.tex
+```
+
+This will call compile the slides.
+
+Usage `mktalk`:
+
+```sh
+mktalk [talkname]
+```
+
+to create a folder [talkname] that contains `slides.tex` and `figs`
+
+Install `mkfig` and `mktalk`:
+
+```sh
+make install
+``` 
+
+
+Uninstall `mkfig` and `mktalk`:
 
 ```sh
 make uninstall

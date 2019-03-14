@@ -1,0 +1,8 @@
+#!/bin/sh
+template_dir="$(dirname -- "$(readlink -f -- `which mktalk`)")"
+if [ -z $1 ]
+then echo "Please supply talk name as first argument."
+  exit 1
+fi
+talkname=$1 
+cp -rf "$template_dir/talk" "./$talkname"
