@@ -37,7 +37,7 @@ make uninstall
 Compilation:
 
 ```sh
-python -c template.py
+python template.py
 ```
 
 Usage `mkpyfig`:
