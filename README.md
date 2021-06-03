@@ -1,6 +1,6 @@
 # Lab Templates
 
-## Figure template (combination of gnuplot and tikz)
+## Gnuplot Figure template (combination of gnuplot and tikz)
 
 Compilation:
 
@@ -31,6 +31,24 @@ Uninstall `mkfig`:
 ```sh
 make uninstall
 ``` 
+
+## Python Figure template (combination of matplotlib and tikz)
+
+Compilation:
+
+```sh
+python -c template.py
+```
+
+Usage `mkpyfig`:
+
+```sh
+mkpyfig [figname]
+```
+
+to create `[figname].py` and `[figname].tex` files in the working directory.  
+
+
 # Talk template 
 
 Compilation:
