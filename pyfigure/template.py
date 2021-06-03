@@ -8,24 +8,22 @@ import matplotlib.pyplot as plt
 figname = os.path.splitext(os.path.basename(__file__))[0]
 
 # Default matplotlib setting
+fontsize = 12
 mpl.rc('axes.spines', top=False, right=False)
-mpl.rc('font', size=10)
-mpl.rc('figure', figsize=(100/2.54, 100/2.54), titlesize=12)
-mpl.rc('axes', titlesize=12, labelsize=12)
-mpl.rc('xtick', labelsize=12)
-mpl.rc('ytick', labelsize=12)
-mpl.rc('legend', fontsize=12)
+mpl.rc('font', size=fontsize)
+mpl.rc('figure', figsize=(100 / 2.54, 100 / 2.54), titlesize=fontsize)
+mpl.rc('axes', titlesize=fontsize, labelsize=fontsize)
+mpl.rc('xtick', labelsize=fontsize)
+mpl.rc('ytick', labelsize=fontsize)
+mpl.rc('legend', fontsize=fontsize)
 mpl.rcParams.update({
     "pgf.texsystem": "pdflatex",
     'font.family': 'serif',
     'text.usetex': True,
-
 })
 mpl.rcParams['text.latex.preamble'] = [
-    r"\usepackage{sfmath, xcolor}",
-    r"\usepackage[scaled=1]{helvet}",
-    r"\usepackage{amsmath}",
-    r"\renewcommand{\familydefault}{\sfdefault}"
+    r"\usepackage{sfmath, xcolor}", r"\usepackage[scaled=1]{helvet}",
+    r"\usepackage{amsmath}", r"\renewcommand{\familydefault}{\sfdefault}"
 ]
 
 
