@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 figname = os.path.splitext(os.path.basename(__file__))[0]
 
 # Default matplotlib setting
-fontsize = 12
+fontsize = 10
 mpl.rc('axes.spines', top=False, right=False)
 mpl.rc('font', size=fontsize)
 mpl.rc('figure', figsize=(100 / 2.54, 100 / 2.54), titlesize=fontsize)
